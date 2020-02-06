@@ -15,4 +15,6 @@
 <!-- Aurora version in About phone -->
 <string name="aurora_version_title">Aurora Version</string>
 
+<!-- Device Model -->
+<string name="device_model">Device Model</string>    
 </resources>
