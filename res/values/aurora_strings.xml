@@ -16,20 +16,26 @@
 <string name="aurora_version_title">Aurora Version</string>
 
 <!-- Device Model -->
-<string name="device_model">Device Model</string>    
+<string name="device_model">Device Model</string>
+
+<!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
 
 <!-- Maintainer -->
 <string name="maintainer">Maintainer</string>
 <string name="maintainer_name" translatable="false">Orang Dalam</string>
+
+<!-- Notification log -->
+<string name="notification_log_summary">Show notifications history log</string>
    
 <!-- SELinux Status -->
 <string name="selinux_status">SELinux status</string>
 <string name="selinux_status_disabled">Disabled</string>
 <string name="selinux_status_permissive">Permissive</string>
 <string name="selinux_status_enforcing">Enforcing</string>
-
-<!-- Notification log -->
-<string name="notification_log_summary">Show notifications history log</string>
  
 <!-- Settings intelligence suggestions class -->
 <string name="config_settingsintelligence_suggestions_class" translatable="false">
