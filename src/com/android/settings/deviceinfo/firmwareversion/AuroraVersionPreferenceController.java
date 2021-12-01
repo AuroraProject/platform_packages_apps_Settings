@@ -25,6 +25,7 @@ import com.android.settings.core.BasePreferenceController;
 public class AuroraVersionPreferenceController extends BasePreferenceController {
 
     private static final String PROPERTY_AURORA_VERSION = "ro.aurora.version";
+    private static final String PROPERTY_AURORA_BUILD_TYPE = "ro.aurora.build.type";
 
     public AuroraVersionPreferenceController(Context context, String key) {
         super(context, key);
@@ -32,12 +33,18 @@ public class AuroraVersionPreferenceController extends BasePreferenceController 
 
     @Override
     public int getAvailabilityStatus() {
-        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_AURORA_VERSION))) return AVAILABLE;
+        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_AURORA_VERSION, PROPERTY_AURORA_BUILD_TYPE))) return AVAILABLE;
         return CONDITIONALLY_UNAVAILABLE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(PROPERTY_AURORA_VERSION,
-                mContext.getString(R.string.unknown));
+        String buildVersion = SystemProperties.get(PROPERTY_AURORA_VERSION,
+                mContext.getString(R.string.device_info_default));
+        String buildType =  SystemProperties.get(PROPERTY_AURORA_BUILD_TYPE,
+                this.mContext.getString(R.string.device_info_default));
+        return buildVersion + " | " + buildType;
+        
     }
+    
+}
