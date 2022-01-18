@@ -13720,4 +13720,31 @@
 
     <!-- Refresh rate category name in Display Settings [CHAR LIMIT=none] -->
     <string name="category_name_refresh_rate">Refresh rate</string>
+    
+    <!-- Aurora version in About phone -->
+    <string name="aurora_version_title">Aurora Version</string>
+    
+    <!-- Device Model -->
+    <string name="device_model">Device Model</string>
+    
+    <!-- Maintainer -->
+    <string name="maintainer">Maintainer</string>
+    <string name="maintainer_name" translatable="false">Orang Dalam</string>
+    
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
+    
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    
+    <!-- Settings intelligence suggestions class -->
+    <string name="config_settingsintelligence_suggestions_class" translatable="false">
+        com.android.settings.intelligence.suggestions.SuggestionService
+    </string>
+    
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Saved Earbuds</string>
 </resources>

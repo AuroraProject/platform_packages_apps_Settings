@@ -22,12 +22,12 @@ import androidx.annotation.VisibleForTesting;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class AxeModelPreferenceController extends BasePreferenceController {
+public class AuroraModelPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
     private static final String DEVICE_MODEL = "ro.product.system.model";
 
-    public AxeModelPreferenceController(Context context, String preferenceKey) {
+    public AuroraModelPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
     }
 
